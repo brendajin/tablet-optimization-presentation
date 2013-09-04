@@ -4,6 +4,7 @@
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
+
 @font-face {
   font-family: 'League Gothic';
   src: url("../../lib/font/league_gothic-webfont.eot");
@@ -39,7 +40,9 @@ body {
 /*********************************************
  * HEADERS
  *********************************************/
-.reveal h1,
+.reveal h1 {
+  font-family: 'Exo', sans-serif;
+}
 .reveal h2,
 .reveal h3,
 .reveal h4,
@@ -47,8 +50,9 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #eeeeee;
-  font-family: "League Gothic", Impact, sans-serif;
-  line-height: 0.9em;
+  font-family: 'Aldrich',sans-serif;
+  /*font-family: "League Gothic", Impact, sans-serif;*/
+  line-height: 1.1em;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
