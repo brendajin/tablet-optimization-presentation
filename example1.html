@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Example 1 - Fixed position issues</title>
+	<style>
+	body {
+		height:2000px;
+	}
+	.one {
+		width:100%;
+		height:50px;
+		background-color:black;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+	.two {
+		width:100%;
+		height:20px;
+		background-color:gray;
+		position: fixed;
+		top:50px;
+		left:0;
+	}
+	input {
+		border: none;
+		border-radius: 10px;
+		width: 90%;
+		margin: 10px auto;
+		height: 20px;
+		padding: 5px;
+		display: block;
+		font-size: 1em;
+		background:url(search.png) white 99% no-repeat;
+		background-size: 20px;
+	}
+	</style>
+</head>
+<body>
+	<div class="one">
+		<input type="text" placeholder="type here"></input>
+	</div>
+	<div class="two"></div>
+</body>
