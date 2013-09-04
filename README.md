@@ -1,14 +1,10 @@
 # Tips & Tricks for Tablet Optimization
 
-A presentation on optimizing the mobile web for tabet devices.
+A presentation on optimizing the mobile web for Tablet devices. Live here: http://brendajin.github.io/tablet-optimization-presentation
 
-## Viewing Instructions
+## Credits
 
 This presentation is built on [Reveal.js](https://github.com/hakimel/reveal.js). 
-
-As I haven't had time to deploy anywhere yet, follow [these installation instructions](https://github.com/hakimel/reveal.js#installation) to serve locally. You'll need to have [Node.js](http://nodejs.org/) and [Grunt](http://gruntjs.com/) installed. 
-
-**NOTE** - this presentation serves on `PORT 8001` to avoid `PORT` conflicts during presentation.
 
 ## License
 
