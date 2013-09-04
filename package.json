@@ -1,21 +1,21 @@
 {
-  "name": "Tips & Tricks for Tablet Optimization",
-  "version": "0.0.1",
-  "description": "An overview of web optimization for tablet devices",
-  // "homepage": "http://lab.hakim.se/reveal-js",
-  // "subdomain": "revealjs",
+  "name": "reveal.js",
+  "version": "2.6.0-dev",
+  "description": "The HTML Presentation Framework",
+  "homepage": "http://lab.hakim.se/reveal-js",
+  "subdomain": "revealjs",
   "scripts": {
     "test": "grunt test",
     "start": ""
   },
   "author": {
-    "name": "Brenda Jin",
-    "email": "info@brendajin.com",
-    "web": "http://www.brendajin.com"
+    "name": "Hakim El Hattab",
+    "email": "hakim.elhattab@gmail.com",
+    "web": "http://hakim.se"
   },
   "repository": {
-    "type": "https",
-    "url": "https://github.com/brendajin/tablet-optimization-presentation.git"
+    "type": "git",
+    "url": "git://github.com/hakimel/reveal.js.git"
   },
   "engines": {
     "node": "~0.8.0"
