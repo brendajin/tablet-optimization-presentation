@@ -14,8 +14,8 @@
     "web": "http://www.brendajin.com"
   },
   "repository": {
-    "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "type": "https",
+    "url": "https://github.com/brendajin/tablet-optimization-presentation.git"
   },
   "engines": {
     "node": "~0.8.0"
