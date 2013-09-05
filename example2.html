@@ -8,30 +8,39 @@
 		#toucharea {
 			width: 50em;
 			height: 50em;
-			background-color: purple;
 			margin: auto;
 			color:white;
 			font-family: 'Helvetica',sans-serif;
 			padding: 4em;
 			text-align: center;
 		}
+		.purple {
+			background-color: purple;
+		}
+		.green {
+			background-color:green;
+		}
 	</style>
 </head>
 <body>
-	<div id="toucharea">
+	<div id="toucharea" class="purple">
 		<h1>Touch here</h1>
 		<h2>Use Remote Web Debugging tools to inspect</h2>
 	</div>
 	<script>
-		window.addEventListener('touchstart',function(event){
-			console.log('touchstart: ' + event)
+		document.getElementById('toucharea').addEventListener('touchstart',function(event){
+			console.log('#toucharea touchstart: ' + event)
 		});
 
-		window.addEventListener('touchmove', function(event){
-			console.log('touchmove: ' + event);
+		document.getElementById('toucharea').addEventListener('touchmove', function(event){
+			console.log('#toucharea touchmove: ' + event);
 		});
-		window.addEventListener('touchend',function(event){
-			console.log('touchend: ' + event);
+		document.getElementById('toucharea').addEventListener('touchend',function(event){
+			console.log('#toucharea touchend: ' + event);
 		});
+
+		var toggle = function() {
+			document.getElementById('toucharea').classList.toggle('green');
+		}
 	</script>
 </body>
