@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Tips & Tricks for Tablet Optimization - Video Stream</title>
+	<style>
+	video {
+		width:100%;
+	}
+	</style>
+</head>
+<body>
+	<video autoplay="true" id="videoElement"></video>
+
+	<script type="text/javascript">
+
+		var video = document.querySelector("#videoElement");
+
+		var handleVideo = function(stream){
+			video.src = window.URL.createObjectURL(stream);
+		}
+
+		var videoError = function(error){
+			console.log(error);
+		}
+
+		navigator.webkitGetUserMedia({video:true,audio:false},handleVideo,videoError)
+	</script>
+</body>
