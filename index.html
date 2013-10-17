@@ -212,18 +212,6 @@ window.addEventListener('touchend',function(event){
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
-			
-			var video = document.querySelector("#videoElement");
-
-			var handleVideo = function(stream){
-				video.src = window.URL.createObjectURL(stream);
-			}
-
-			var videoError = function(error){
-				console.log(error);
-			}
-
-			navigator.webkitGetUserMedia({video:true,audio:false},handleVideo,videoError)
 		</script>
 
 	</body>
