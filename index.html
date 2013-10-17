@@ -114,7 +114,8 @@
 					</section>
 					<section>
 						<h2><a href="example1.html" alt="example1-fixed-position-issues-android-ios">Example</a></h2>
-						<p>Fixed position issues in Android and iOS
+						<p>Fixed position issues in Android and iOS</p>
+						<video autoplay="true" id="videoElement"></video>
 					</section>
 					<section>
 						<h2>Get in Touch</h2>
@@ -213,7 +214,18 @@ window.addEventListener('touchend',function(event){
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
+			
+			var video = document.querySelector("#videoElement");
 
+			var handleVideo = function(stream){
+				video.src = window.URL.createObjectURL(stream);
+			}
+
+			var videoError = function(error){
+				console.log(error);
+			}
+
+			navigator.webkitGetUserMedia({video:true,audio:false},handleVideo,videoError)
 		</script>
 
 	</body>
