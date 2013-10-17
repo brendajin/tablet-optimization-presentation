@@ -26,7 +26,6 @@
 		<script>
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
-
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -40,13 +39,12 @@
 			<div class="slides">
 				<section>
 					<h1>Tips & Tricks for Tablet Optimization</h1>
+					<p><a href="http://bit.ly/17Ara4I" alt="presentation-url">http://bit.ly/17Ara4I</a></p>
 				</section>
 
 				<section>
 					<h2>Brenda Jin</h2>
-					<h3>UI Developer, Macys.com</h3>
-					<h3>Founder, HelloWorm</h3>
-					<p>@cyberneticlove</p>
+					<h3>@cyberneticlove</h3>
 					<aside class="notes"> 
 						Not comprehensive
 						Represents my own opinions
@@ -104,11 +102,44 @@
 					</section>
 					<section>
 						<h2>Debug</h2>
+						<aside class="notes"> 
+							Android and iOS
+							Serve it up and test it
+						</aside>
+					</section>
+					<section>
+						<li>Android: Chrome Browser <a href="https://chrome.google.com/webstore/detail/adb/dpngiggdglpdnjdoaefidgiigpemgage?hl=en-US" alt="Google-Chrome-ADB-extension">Plugin</a> for Android Devices</li>
+						<li>iOS: Safari 6 on Mac OS X <a href="http://moduscreate.com/enable-remote-web-inspector-in-ios-6/" alt="instructions-safari-remote-debugging-ios">Remote Debugging Instructions</a></li>
+					</section>
+					<section>
+						<h2><a href="example1.html" alt="example1-fixed-position-issues-android-ios">Example</a></h2>
+						<p>Fixed position issues in Android and iOS</p>
 					</section>
 					<section>
 						<h2>Get in Touch</h2>
 					</section>
 					<section>
+						<h2><a href="example2.html" alt="example2-touch-events-to-inspect-remote-debugging">Example</a></h2>
+						<p>Inspect Touch Events</p>
+
+						<pre><code data-trim contenteditable>
+//Copy and paste these into your JavaScript console
+
+window.addEventListener('touchstart',function(event){
+	console.log('touchstart: ', event)
+});
+
+window.addEventListener('touchmove', function(event){
+	console.log('touchmove: ', event);
+});
+
+window.addEventListener('touchend',function(event){
+	console.log('touchend: ', event);
+});
+					</code></pre>
+					</section>
+					<section>
+						<h2>Choosing Libraries, Shims, Polyfills, Frameworks...</h2>
 						<li><strong>C</strong>onflict</li>
 						<li><strong>A</strong>ttitude</li>
 						<li><strong>R</strong>ecentness</li>
@@ -117,9 +148,23 @@
 						<li><strong>E</strong>ase</li>
 						<li><strong>S</strong>tyle</li>
 						<li><strong>S</strong>ize</li>
+						<aside class="notes">
+							<li>Conflict - How will this interact with the libraries I already use, and the functionality I already have?</li>
+							<li>Attitude - How satisfied am I with the authors' responses to issues and questions?</li>
+							<li>Recentness - How recently has this been updated? How active is the author(s)?</li>
+							<li>Readability - Can I understand how how it works by reading it?</li>
+							<li>Reason -  What do I need this library for? Is it holistic or is it for one specific purpose?</li>
+							<li>Ease - How easy is it for me and future colleagues to use?</li>
+							<li>Style - Do the patterns match the rest of the style of our site?</li>
+							<li>Size - How big is the library?</li>
+						</aside>
 					</section>
 					<section>
 						<h2>Measure</h2>
+					</section>
+					<section>
+						<h2><a href="example3.html" alt="example3-measure-img-load-remotely">Example</a></h2>
+						<p>Measure image load on placekittens</p>
 					</section>
 					<section>
 						<h2>Let Technology Provide Feedback for Design</h2>
@@ -129,33 +174,9 @@
 				<section>
 					<h2>Resources</h2>
 					<li>Links: <a href="http://urli.st/vps" alt="additional-tablet-resources">http://urli.st/vps</a></li>
-					<li><a href="https://developers.google.com/chrome-developer-tools/docs/remote-debugging" alt="install-instructions-adb-remote-debugging-android">Install ADB</a> and <a href="https://chrome.google.com/webstore/detail/adb/dpngiggdglpdnjdoaefidgiigpemgage?hl=en-US" alt="Google-Chrome-ADB-extension">Plugin</a></li>
-					<li><a href="http://moduscreate.com/enable-remote-web-inspector-in-ios-6/" alt="instructions-safari-remote-debugging-ios">Safari Remote Debugging</a></li>
+					<li>Android: Chrome Browser <a href="https://chrome.google.com/webstore/detail/adb/dpngiggdglpdnjdoaefidgiigpemgage?hl=en-US" alt="Google-Chrome-ADB-extension">Plugin</a> for Android Devices</li>
+					<li>iOS: Safari 6 on Mac OS X <a href="http://moduscreate.com/enable-remote-web-inspector-in-ios-6/" alt="instructions-safari-remote-debugging-ios">Remote Debugging Instructions</a></li>
 				</section>
-
-				
-
-				<!-- <section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) ) {
-        node.className += ' roll';
-      }
-    };
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section> -->
-
 				<section>
 					<h1>THE END</h1>
 					<h3>Brenda Jin @cyberneticlove</h3>
@@ -191,7 +212,6 @@ function linkify( selector ) {
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
-
 		</script>
 
 	</body>
