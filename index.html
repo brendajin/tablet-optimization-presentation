@@ -74,14 +74,21 @@
 						<h2>⇑ Tablet Sales ⇑</h2>
 						<h2>⇓ PC Sales ⇓</h2>
 						<h2>↫ Fuzzy Future ↬</h2>
+						<aside class="notes">
+							International Data Corporation (IDC) reports that tablet sales will surpass PC sales in Q4 of 2013
+							Tapering off though
+							Decline of the PC is almost certain, the next dominant devices is up for debate - between Phablets, wearables, and tablets
+							What's important is preparing yourself for what comes next - APIs, interface design, forward-thinking technology
+						</aside>
 					</section>
 				</section>
 
 				<section>
 					<h2>Web Optimization</h2>
 					<aside class="notes">
-						<p>Think about your web interaction</p>
 						<p>limited screen real estate, prioritize and simplify your content</p>
+						<p>UI Frameworks may only give you one breakpoint - consider whether this works for your tablet audience - look at the framework site on your tablet - like it?</p>
+						<p></p>
 						<p>larger screen, more flexibility</p>
 						<p>mobile already, add a breakpoint</p>
 						<p>no mobile, think about two breakpoints</p>
@@ -128,6 +135,8 @@
 window.addEventListener('touchstart',function(event){
 	console.log('touchstart: ', event)
 });
+
+document.getElementByIdea('toucharea').addEventListener('touchstart',toggle);
 
 window.addEventListener('touchmove', function(event){
 	console.log('touchmove: ', event);
