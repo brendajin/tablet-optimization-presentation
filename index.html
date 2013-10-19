@@ -136,7 +136,7 @@ window.addEventListener('touchstart',function(event){
 	console.log('touchstart: ', event)
 });
 
-document.getElementByIdea('toucharea').addEventListener('touchstart',toggle);
+document.getElementById('toucharea').addEventListener('touchstart',toggle);
 
 window.addEventListener('touchmove', function(event){
 	console.log('touchmove: ', event);
@@ -152,7 +152,6 @@ window.addEventListener('touchend',function(event){
 						<li><strong>C</strong>onflict</li>
 						<li><strong>A</strong>ttitude</li>
 						<li><strong>R</strong>ecentness</li>
-						<li><strong>R</strong>eadability</li>
 						<li><strong>R</strong>eason</li>
 						<li><strong>E</strong>ase</li>
 						<li><strong>S</strong>tyle</li>
@@ -161,10 +160,9 @@ window.addEventListener('touchend',function(event){
 							<li>Conflict - How will this interact with the libraries I already use, and the functionality I already have?</li>
 							<li>Attitude - How satisfied am I with the authors' responses to issues and questions?</li>
 							<li>Recentness - How recently has this been updated? How active is the author(s)?</li>
-							<li>Readability - Can I understand how how it works by reading it?</li>
 							<li>Reason -  What do I need this library for? Is it holistic or is it for one specific purpose?</li>
 							<li>Ease - How easy is it for me and future colleagues to use?</li>
-							<li>Style - Do the patterns match the rest of the style of our site?</li>
+							<li>Style - Do the patterns match the rest of the style of our site? Can I understand how how it works by reading it?</li>
 							<li>Size - How big is the library?</li>
 						</aside>
 					</section>
@@ -182,6 +180,7 @@ window.addEventListener('touchend',function(event){
 
 				<section>
 					<h2>Resources</h2>
+					<li>Slides: <a href="http://bit.ly/17Ara4I" alt="presentation-url">http://bit.ly/17Ara4I</a></li>
 					<li>Links: <a href="http://urli.st/vps" alt="additional-tablet-resources">http://urli.st/vps</a></li>
 					<li>Android: Chrome Browser <a href="https://chrome.google.com/webstore/detail/adb/dpngiggdglpdnjdoaefidgiigpemgage?hl=en-US" alt="Google-Chrome-ADB-extension">Plugin</a> for Android Devices</li>
 					<li>iOS: Safari 6 on Mac OS X <a href="http://moduscreate.com/enable-remote-web-inspector-in-ios-6/" alt="instructions-safari-remote-debugging-ios">Remote Debugging Instructions</a></li>
